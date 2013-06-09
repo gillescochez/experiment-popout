@@ -1,12 +1,10 @@
 # Popout
 
-Popout is just a very basic experiment to test dragging an element outside the browser window bu turning it into a popup.
+Popout is just a very basic experiment to test dragging an element outside the browser window by turning it into a popup.
 So mousedown on a div for example, popup appear underneath with div content, whilst mouse is down dragging of the popup
-is possible. If the popup is close the content is displayed inside the browser again.
+is possible. If the popup is closed the content is displayed inside the browser again.
 
-This is very badly coded and shouldn't really be used as is, it was mostly to demo it so the sync of content and everything
-is done in a very crude way to provide the result, the goal was mostly to show it is possible to create a popup on the fly
-and sort of similate dragging an element outside the browser window.
+This is very badly coded and shouldn't really be used as is, it was mostly to demo the popup stuff so the rest is done in a very crude way to provide the visual result, the goal was mostly to show it is possible to create a popup on the fly and sort of similate dragging an element outside the browser window.
 
 ## Live demo
 
