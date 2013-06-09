@@ -6,14 +6,6 @@ is possible. If the popup is closed the content is displayed inside the browser 
 
 This is very badly coded and shouldn't really be used as is, it was mostly to demo the popup stuff so the rest is done in a very crude way to provide the visual result, the goal was mostly to show it is possible to create a popup on the fly and sort of similate dragging an element outside the browser window.
 
-## Live demo
-
-Just as dirty ;)
-
-http://popable.csurl.eu/
-user: demo
-pass: d3m0
-
 ## Tested... erm... sort of...
 
 Just loaded, tried and noted what was wrong, there is nothing to handle various browsers but pretty sure many issues can be easily resolved. The main problem is that browsers don't handle multiple window properly so the even fire on mousemove
