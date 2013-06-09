@@ -1,0 +1,78 @@
+* {
+	font-family:arial;
+	font-size:14px;
+	color:#333;
+	
+	padding:0;
+	margin:0;
+	
+	-webkit-user-select: none; 
+	-moz-user-select: none;
+	-ms-user-select: none; 
+
+	-o-user-select: none;
+	user-select: none;
+}
+.popout {
+	background: #f2f5f6; /* Old browsers */
+	background: -moz-linear-gradient(top, #f2f5f6 0%, #e3eaed 37%, #c8d7dc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f5f6), color-stop(37%,#e3eaed), color-stop(100%,#c8d7dc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #f2f5f6 0%,#e3eaed 37%,#c8d7dc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=0 ); /* IE6-9 */
+	float:left;
+	border:1px solid #666;
+	width:200px;
+	height:200px;
+	margin:10px;
+}
+	.popout h1 {
+		background: #fcfff4; /* Old browsers */
+		background: -moz-linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcfff4), color-stop(40%,#dfe5d7), color-stop(100%,#b3bead)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* IE10+ */
+		background: linear-gradient(to bottom, #fcfff4 0%,#dfe5d7 40%,#b3bead 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 ); /* IE6-9 */
+		border-bottom:1px solid #666;
+		text-transform:uppercase;
+		text-align:center;
+		text-shadow:1px 1px 2px rgba(255,255,255,.6), -1px -1px 2px rgba(255,255,255,.6);
+		padding:10px;
+	}
+	.popout p {
+		padding:5px;
+		overflow:hidden;
+		border-bottom:1px solid #ccc;
+	}
+	.popout em {
+		display:block;
+		width:30%;
+		text-align:right;
+		float:right;
+	}
+
+
+/* when the popup window is on just hide stuff */
+.popout.out {
+	border:1px dotted #666;
+	background: #fcfff4;
+}
+	.popout.out * {
+		display:none;
+	}
+	
+.popup {
+	overflow:hidden;
+	margin:0;
+	width:100%;
+	height:100%;
+	position:absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	top:0;
+}

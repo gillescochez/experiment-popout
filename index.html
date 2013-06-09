@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<link href="Popout.css" rel="stylesheet" />
+<script src="jquery.js"></script>
+<script src="Popout.js"></script>
+<body style="padding:20px;">
+	<div class="popout">
+		<h1>Popable tile</h1>
+		<p>Intstrument: <em>USDGBP</em></p>
+		<p>Bid Price: <em class="bidPrice1">0.9</em></p>
+		<p>Ask Price: <em class="askPrice1">1.1</em></p>
+	</div>
+	<div class="popout">
+		<h1>Popable tile</h1>
+		<p>Intstrument: <em>EURGBP</em></p>
+		<p>Bid Price: <em class="bidPrice2">0.9</em></p>
+		<p>Ask Price: <em class="askPrice2">1.1</em></p>
+	</div>
+	<div class="popout">
+		<h1>Popable tile</h1>
+		<p>Intstrument: <em>USDGBP</em></p>
+		<p>Bid Price: <em class="bidPrice1">0.9</em></p>
+		<p>Ask Price: <em class="askPrice1">1.1</em></p>
+	</div>
+	<div class="popout">
+		<h1>Popable tile</h1>
+		<p>Intstrument: <em>EURGBP</em></p>
+		<p>Bid Price: <em class="bidPrice2">0.9</em></p>
+		<p>Ask Price: <em class="askPrice2">1.1</em></p>
+	</div>
+	<div class="popout">
+		<h1>Popable tile</h1>
+		<p>Intstrument: <em>USDGBP</em></p>
+		<p>Bid Price: <em class="bidPrice1">0.9</em></p>
+		<p>Ask Price: <em class="askPrice1">1.1</em></p>
+	</div>
+	<div class="popout">
+		<h1>Popable tile</h1>
+		<p>Intstrument: <em>EURGBP</em></p>
+		<p>Bid Price: <em class="bidPrice2">0.9</em></p>
+		<p>Ask Price: <em class="askPrice2">1.1</em></p>
+	</div>
+	<div class="popout">
+		<h1>Popable tile</h1>
+		<p>Intstrument: <em>USDGBP</em></p>
+		<p>Bid Price: <em class="bidPrice1">0.9</em></p>
+		<p>Ask Price: <em class="askPrice1">1.1</em></p>
+	</div>
+	<div class="popout">
+		<h1>Popable tile</h1>
+		<p>Intstrument: <em>EURGBP</em></p>
+		<p>Bid Price: <em class="bidPrice2">0.9</em></p>
+		<p>Ask Price: <em class="askPrice2">1.1</em></p>
+	</div>
+</body>
+<script>
+// let's simulate data update so we can update popup window with it too
+function getRandomArbitary (min, max) {
+    return (Math.random() * (max - min) + min).toString().substring(0,4);
+}
+
+setInterval(function() {
+
+	$('.bidPrice1').text(getRandomArbitary(0.3, 1.1));
+	$('.askPrice1').text(getRandomArbitary(0.3, 1.1));
+	$('.bidPrice2').text(getRandomArbitary(0.1, 1.5));
+	$('.askPrice2').text(getRandomArbitary(0.1, 1.5));
+	
+}, 500);
+</script>
+</html>

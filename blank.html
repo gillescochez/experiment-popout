@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8" />
+<link href="Popout.css" rel="stylesheet" />
+<script src="jquery.js"></script>
+<body class="popup"></body>
+<script>
+	window.opener.popout.onPopupReady(window);
+	window.beforeunload = function() {
+		window.opener.popout.onPopupClose();
+	};
+	$(window).on('beforeunload unload', function() {
+		window.opener.popout.onPopupClose(window);
+	});
+</script>
+</html>
